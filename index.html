@@ -1,131 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raqalna Komunika</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #1d3557, #457b9d);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header img {
-      width: 120px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 3px solid white;
-    }
-    header h1 {
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.1em;
-      margin-top: 10px;
-    }
-    main {
-      max-width: 960px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    h2 {
-      font-size: 1.8em;
-      color: #1d3557;
-      margin-bottom: 15px;
-    }
-    .project {
-      background: #f1f1f1;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-    .project h3 {
-      color: #457b9d;
-      margin-bottom: 8px;
-    }
-    a {
-      color: #1d3557;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #1d3557;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .contact-btn:hover {
-      background: #457b9d;
-    }
-    footer {
-      background: #1d3557;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raqalna Komunika</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0b132b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #0b132b;
+            color: white;
+        }
+        .social-buttons {
+            margin-top: 1rem;
+        }
+        .social-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .whatsapp {
+            background-color: #25d366;
+        }
+        .instagram {
+            background-color: #e1306c;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo Raqalna" />
+        </div>
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#">Tentang</a>
+            <a href="#">Layanan</a>
+            <a href="#">Kontak</a>
+        </nav>
+    </header>
 
-  <header>
-    <img src="https://via.placeholder.com/120" alt="Logo Raqalna" />
-    <h1>Raqalna Komunika</h1>
-    <p>Event Organizer Profesional & Kreatif</p>
-  </header>
+    <div class="container">
+        <h1>Selamat Datang di Raqalna Komunika</h1>
+        <p>Kami adalah Event Organizer profesional yang siap membantu Anda merancang dan menyukseskan setiap acara spesial Anda.</p>
 
-  <main>
-    <section>
-      <h2>Tentang Kami</h2>
-      <p>Kami adalah Event Organizer berpengalaman yang telah menangani ratusan acara dengan layanan profesional dan pendekatan kreatif. Mulai dari pernikahan, seminar, hingga konser besar – kami hadir untuk mewujudkan acara impian Anda.</p>
-    </section>
+        <div class="social-buttons">
+            <a class="whatsapp" href="https://wa.me/6282152055365" target="_blank">Chat WhatsApp</a>
+            <a class="instagram" href="https://instagram.com/elevenb_ent" target="_blank">Instagram</a>
+        </div>
+    </div>
 
-    <section>
-      <h2>Proyek Unggulan</h2>
-      <div class="project">
-        <h3>Festival Budaya Nusantara 2024</h3>
-        <p>Event budaya tahunan dengan ribuan pengunjung dan puluhan penampilan budaya dari seluruh Indonesia.</p>
-      </div>
-      <div class="project">
-        <h3>Grand Opening Startup XYZ</h3>
-        <p>Peluncuran produk inovatif dengan konsep modern dan strategi komunikasi yang terintegrasi.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Kontak Kami</h2>
-      <p>Email: <a href="mailto:raqalna@email.com">raqalna@email.com</a></p>
-      <p>Instagram: <a href="https://instagram.com/raqalna" target="_blank">@raqalna</a></p>
-      <br />
-      <a href="mailto:raqalna@email.com" class="contact-btn">Hubungi Kami</a>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Raqalna Komunika. All rights reserved.
-  </footer>
-
+    <footer>
+        &copy; 2025 Raqalna Komunika. All rights reserved.
+    </footer>
 </body>
 </html>
